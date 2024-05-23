@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+
+    <style>
+        h1{
+            color: blue;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Pokedex</h1>
     <p>Meu primeiro site está sendo feito através de um curso da DIO</p>
+    <button id="btnTeste" type="button">
+        Teste
+    </button>
+
+    <script>
+        const btnTeste = document.getElementById("btnTeste")
+        btnTeste.addEventListener("click", function(){
+            console.log('Clicou no botão!')
+        })
+        
+        //console.log(btnTeste)
+    </script>
 </body>
 </html>
