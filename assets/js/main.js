@@ -18,7 +18,7 @@ const pokemonList = document.getElementById('pokemonList')
 
 //Fazendo requisição através da URL, método reduzido (=>) (function)
 pokeApi.getPokemons().then((pokemons = []) => {
-    //debugger
+
     pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('')
 
     console.log(pokemonList)
